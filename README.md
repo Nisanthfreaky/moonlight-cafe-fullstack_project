@@ -3,6 +3,8 @@
 A modern Responsive Cafe Website built using HTML, CSS, JavaScript, Django, and MySQL.
 This project allows users to view cafe details, explore the menu, reserve tables, and send contact messages through a clean and responsive interface.
 
+
+
 🚀 Features
 
 Responsive cafe website design
@@ -21,6 +23,8 @@ Mobile-friendly layout
 
 Smooth UI and modern cafe theme
 
+
+
 🛠 Tech Stack
 
 Frontend
@@ -31,9 +35,12 @@ CSS3
 
 JavaScript
 
+
+
 Backend
 
 Django (Python)
+
 
 Database
 
