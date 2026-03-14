@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonLight Cafe</title>
+
+
+    {% load static %}
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="icon" href="{% static 'main/images/Logo1.png' %}">
+
+
+
+    <!-- Linking Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+
+        <!-- Navbar -->
+
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    MoonLight Cafe
+                </h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Coffee • Comfort • Conversations</h2>
+                    <h3 class="subtitle">Where Coffee Meets Moonlight</h3>
+                    <p class="description">Experience the warmth of freshly brewed coffee, delightful desserts, and a
+                        cozy ambience where every moment feels special.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="{% static 'main/images/49e78fa4a23c6db17a435365988d6037.png' %}" alt="Hero" class="hero-image">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="{% static 'main/images/About-image.jpg' %}" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">At MoonLight Cafe, we believe that great coffee brings people together. Our café is
+                        designed to offer a warm and relaxing space where you can enjoy freshly brewed coffee, delicious
+                        desserts, and memorable moments. Whether you're meeting friends, working, or simply unwinding,
+                        we aim to make every visit special with quality flavors and a cozy atmosphere. We are passionate
+                        about serving high-quality beverages and freshly prepared treats that delight every customer,
+                        while creating a welcoming environment where everyone can relax, connect, and enjoy the simple
+                        pleasure of a perfect cup of coffee.</p>
+
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/hot-beverages.png' %}" alt="Hot Beverages" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">wide range of statement hot coffees make you fresh and light</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/cold-beverages.png' %}" alt="Cold Beverages" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Creamy and frothy cold coffee to make you cool</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/refreshment.png' %}" alt="Refreshment" class="menu-image">
+                        <h3 class="name">Refreshment</h3>
+                        <p class="text">Fruit and icy refreshing drink to make feel refresh</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/special-combo.png' %}" alt="Special Combos" class="menu-image">
+                        <h3 class="name">Special Combos</h3>
+                        <p class="text">Your favorite eating and drinking combinations</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/desserts.png' %}" alt="Dessert" class="menu-image">
+                        <h3 class="name">Dessert</h3>
+                        <p class="text">Satiate your plate and take you on culinary treat.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="{% static 'main/images/burger-frenchfries.png' %}" alt="Burger Frenchfries" class="menu-image">
+                        <h3 class="name">Burger Frenchfries</h3>
+                        <p class="text">Quick bites to satisfy your small size hunger.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="gallery-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-1.jpg' %}" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-2.jpg' %}" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-3.jpg' %}" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-4.jpg' %}" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-5.jpg' %}" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="{% static 'main/images/gallery-6.jpg' %}" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- Reservation Section -->
+        <section class="reservation-section" id="reservation">
+
+            <h2 class="section-title"> Table Reservation</h2>
+
+            <div class="section-content">
+
+                <form method="POST" action="/reservation/" id="reservationForm">
+{% csrf_token %}
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="date" name="date" required>
+
+<select name="time" required>
+    <option value="">Select Time</option>
+    <option value="09:00 AM">09:00 AM</option>
+    <option value="10:00 AM">10:00 AM</option>
+    <option value="11:00 AM">11:00 AM</option>
+    <option value="12:00 PM">12:00 PM</option>
+    <option value="01:00 PM">01:00 PM</option>
+    <option value="02:00 PM">02:00 PM</option>
+    <option value="03:00 PM">03:00 PM</option>
+    <option value="04:00 PM">04:00 PM</option>
+    <option value="05:00 PM">05:00 PM</option>
+</select>
+
+<select name="people" required>
+    <option value="">Number of People</option>
+    <option value="1">1 Person</option>
+    <option value="2">2 People</option>
+    <option value="3">3 People</option>
+    <option value="4">4 People</option>
+    <option value="5">5+ People</option>
+</select>
+
+<button type="submit">Reserve Table</button>
+
+</form>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" action="/" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-contact">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Avenue, Coimbatore, TN-99</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>MoonLightcafe123@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Monday - Friday:9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Saturday :10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Sunday: Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>wwww.moonlightcafe.com</p>
+                    </li>
+                </ul>
+
+                <form method="POST" action="/contact/" class="contact-form">
+{% csrf_token %}
+                    <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your email" class="form-input" required>
+                    <textarea  name="message" placeholder="Your message" class="form-input" required></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2026 MoonLight Cafe. All Rights Reserved.</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">.</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+
+        </footer>
+    </main>
+
+
+    <!-- Back To Top Button -->
+    <button id="topBtn" onclick="topFunction()">⬆</button>
+    
+    <script src="{% static 'main/js/script.js' %}"></script>
+
+</body>
+
+</html>
